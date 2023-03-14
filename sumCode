@@ -1,0 +1,12 @@
+pragma solidity ^0.4.11;
+
+contract Example005 {
+  function operation() returns (uint result) {
+    result = sum(10,1,5,2);
+  }
+
+  function sum(uint a, uint b, uint c, uint d) returns (uint) {
+      uint result = a - b * c / d;
+      return result;
+    }
+}
